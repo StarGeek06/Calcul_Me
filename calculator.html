@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculator.css">
+    <script src="calculator.js"></script>
+    <title>Calculator</title>
+</head>
+<body>
+    
+    <div class="all">
+
+        <div class="noeud">
+            <img src="noeud-papillon.png" alt="">
+        </div>
+        <div class="container">
+
+            <div class="interface">
+
+                <div class="calculface" id="calculface">
+                    
+                      <input class="text" id="display" disabled>
+
+                </div>
+
+            </div>
+
+            <div class="allumage">
+
+                <div class="on" id="on" onclick="on()">
+                    on
+                </div>
+
+                <div class="off" id="off" onclick="off()">
+                     off
+                </div>
+            </div>
+            
+    
+            <div class="numbers">
+    
+                <div class="chiffres">
+
+                    <div class="chiffre" value="7" onclick="appendValue('7')">7</div>
+                    <div class="chiffre" value="8" onclick="appendValue('8')">8</div>
+                    <div class="chiffre" style="margin-right: 50px;" value="9" onclick="appendValue('9')">9</div>
+                    <div class="chiffre" value="/" onclick="appendValue('/')">/</div>
+                    <div class="chiffre" value="4" onclick="appendValue('4')">4</div>
+                    <div class="chiffre" value="5" onclick="appendValue('5')">5</div>
+                    <div class="chiffre" value="6" onclick="appendValue('6')">6</div>
+                    <div class="chiffre" value="-" onclick="appendValue('-')">-</div>
+                    <div class="chiffre" value="1" onclick="appendValue('1')">1</div>
+                    <div class="chiffre" value="2" onclick="appendValue('2')">2</div>
+                    <div class="chiffre" value="3" onclick="appendValue('3')">3</div>
+                    <div class="chiffre" value="+" onclick="appendValue('+')">+</div>
+                    <div class="chiffre" value="0" onclick="appendValue('0')">0</div>                 
+                    <div class="chiffre" value="." onclick="appendValue('.')">.</div>
+                    <div class="chiffre" alue="=" onclick="calculate()">=</div>
+                    <div class="chiffre" value="*" onclick="appendValue('*')">*</div>
+                    <div class="chiffre" value="C" onclick="clearDisplay()">C</div>
+
+                   
+                </div>
+
+
+            </div>
+
+            </div>
+
+            
+        </div>
+
+    </div>
+    
+</body>
+</html>

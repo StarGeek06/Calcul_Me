@@ -1,0 +1,1 @@
+The Calculator project is a web-based application designed to perform basic arithmetic operations. It provides users with a simple and intuitive interface for performing calculations such as addition, subtraction, multiplication, and division.

@@ -24,17 +24,29 @@ function clearDisplay()
 function calculate() 
 {
     //Essayer
+
+    var d = document.getElementById('display');
+    var hist = document.getElementById('h');
+    let calcul = [];
+
     try 
     {
-        let res = eval(document.getElementById('display').value);
+        let expression = d.value;
+        let res = eval(expression);
 
-        document.getElementById('display').value = res;
+        d.value = res;
         
+        hist.value += ('       ' + expression + " =" + '\n' + '      ' + res + '\n\n');
+
+        hist.scrollTop = hist.scrollHeight;
         
+
     } 
     catch (error) 
     {
-        document.getElementById('display').value = 'Error';
+        console.error(error);
+
+        d.value = 'Error';
     }
 }
 
@@ -68,3 +80,14 @@ function on()
      
 }
 
+function clearOne()
+{
+    var t = document.getElementById('display');
+    var currentvalue = t.value;
+
+    var newvalue = currentvalue.substring(0, currentvalue.length-1);
+
+    t.value = newvalue;
+
+
+}

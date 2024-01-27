@@ -202,3 +202,42 @@ img
     background-color: black;
 }
 
+.h 
+{
+    border: none;
+    outline: none;
+    background-color: black;
+    border-radius: 40px;
+    color: white;
+    height: 300px;
+    width: 350px;
+    font-family: 'Pop';
+}
+
+h1 
+{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-family: 'Pop';
+}
+#h
+{
+    border: none;
+    outline: none;
+    background-color:transparent;
+    margin-left: 60px ;
+    margin-top: 10px;
+    color: white;
+    font-family: 'Pop';
+}
+.history 
+{
+    
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Pop';
+    height: 10vh;
+    width: 50%;
+}

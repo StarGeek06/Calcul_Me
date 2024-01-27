@@ -59,6 +59,9 @@
                     <div class="chiffre" alue="=" onclick="calculate()">=</div>
                     <div class="chiffre" value="*" onclick="appendValue('*')">*</div>
                     <div class="chiffre" value="C" onclick="clearDisplay()">C</div>
+                    <div class="chiffre" value="(" onclick="appendValue('(')">(</div>
+                    <div class="chiffre" value=")" onclick="appendValue(')')">)</div>
+                    <div class="chiffre" value="s" onclick="clearOne()">s</div>
 
                    
                 </div>
@@ -68,6 +71,14 @@
 
             </div>
 
+            
+        </div>
+
+        <div class="history">
+            <div class="h">
+                <h1>Historique</h1>
+                <textarea name="h" id="h" cols="30" rows="10" disabled></textarea>
+            </div>
             
         </div>
 
